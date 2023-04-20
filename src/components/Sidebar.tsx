@@ -15,19 +15,19 @@ export function Sidebar(props: SidebarProps) {
 
       <nav className='mt-28 p-6 space-y-4'>
         <a href="#home" className='flex items-center gap-2'>
-          <Wrench size={32}  className={(props.acao ?'text-white' : '')}weight="bold" />
+          <Wrench size={32}  className={(props.acao ?'text-white' : '')}weight="regular" />
         </a>
         <a href="" className='flex items-center gap-2'>
           <Headset size={32}  className={(props.acao ?'text-white' : 'b')}weight="bold" />
         </a>
         <a href="" className='flex items-center gap-2'>
-          <CrownSimple size={32}  className={(props.acao ?'text-white' : '')}weight="bold" />
+          <CrownSimple size={32}  className={(props.acao ?'text-white' : '')}weight="regular" />
         </a>
         <a href="" className='flex items-center gap-2'>
-          <Megaphone size={32}  className={(props.acao ? 'text-white' : '')}weight="bold" />
+          <Megaphone size={32}  className={(props.acao ? 'text-white' : '')}weight="regular" />
         </a>
         <a href="" className='flex items-center gap-2'>
-          <MapPin size={32} weight="bold" className={(props.acao ? 'text-white' : '')}/>
+          <MapPin size={32} weight="regular" className={(props.acao ? 'text-white' : '')}/>
         </a>
       </nav>
 
