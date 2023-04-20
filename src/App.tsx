@@ -1,7 +1,5 @@
 import bg from './assets/bg.png'
 import logo from './assets/logo.png'
-import icon1 from './assets/headphone.png'
-import icon2 from './assets/crown.png'
 import { Atendimento } from './components/Atendimento'
 
 
@@ -13,10 +11,8 @@ export function App() {
           <img src={logo} alt="" className='max-h-8' />
           <nav className='mt-56 p-4'>
             <a href="#home" className=''>
-              <img src={icon1} alt="" />
             </a>
             <a href="">
-              <img src={icon2} alt="" />
             </a>
             <a href=""></a>
             <a href=""></a>
