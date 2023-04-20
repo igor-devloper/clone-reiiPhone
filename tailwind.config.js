@@ -5,7 +5,11 @@ export default {
     extend: {
       fontFamily: {
         'head': 'Poppins, sans-serif'
-      }
+      },
+      colors: {
+        'main': '#253556',
+        'atendimento': '#386BA1'
+      },
     },
   },
   plugins: [],
