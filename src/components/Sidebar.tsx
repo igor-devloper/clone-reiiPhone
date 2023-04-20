@@ -18,7 +18,7 @@ export function Sidebar(props: SidebarProps) {
           <Wrench size={32}  className={(props.acao ?'text-white' : '')}weight="regular" />
         </a>
         <a href="" className='flex items-center gap-2'>
-          <Headset size={32}  className={(props.acao ?'text-white' : 'b')}weight="bold" />
+          <Headset size={32}  className={(props.acao ?'text-white' : 'b')}weight="regular" />
         </a>
         <a href="" className='flex items-center gap-2'>
           <CrownSimple size={32}  className={(props.acao ?'text-white' : '')}weight="regular" />
