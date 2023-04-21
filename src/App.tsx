@@ -1,12 +1,9 @@
 import { useEffect, useState } from 'react'
-import { Atendimento } from './components/sections/Atendimento'
+import { Atendimento } from './components/Sections/Atendimento'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import bg from './assets/bg.png'
-import { Sidebar } from './components/Sidebar'
-import { NossaHistoria } from './components/sections/NossaHistoria'
-import { Depoimentos } from './components/sections/Depoimentos'
-import { Contato } from './components/sections/Contato'
+import { Contato, Depoimentos, NossaHistoria, Sidebar, } from './components'
 
 
 export function App() {

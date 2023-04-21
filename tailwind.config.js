@@ -15,6 +15,7 @@ export default {
         ...violet,
         ...mauve,
       },
+    
       backgroundImage: {
         'nossaHis' : "url('src/assets/img-nossaHis.png')"
       }

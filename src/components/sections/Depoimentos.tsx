@@ -13,17 +13,26 @@ export function Depoimentos() {
   return (
     <section id='#depoimentos' className='mb-24'>
       <div className='m-auto max-w-[965px]'>
-        <h1 className='text-blue-900 text-3xl flex justify-center font-bold mt-16 mb-4' data-aos="fade-up">Depoimentos</h1>
-        <div className='flex gap-8'>
+        <h1 className='text-from  text-3xl flex justify-center font-bold mt-16 mb-4' data-aos="fade-up">Depoimentos</h1>
+        <div className='lg:flex lg:gap-8 hidden'>
           <img src={dep1} alt="" className='max-w-[641px] max-h-[642px] cursor-pointer' />
-          <div className='grid grid-cols-3 gap-4'>
-            <img src={dep2} alt=""  className='cursor-pointer'/>
-            <img src={dep3} alt="" className='cursor-pointer'/>
-            <img src={dep4} alt="" className='cursor-pointer'/>
-            <img src={dep5} alt="" className='cursor-pointer'/>
-            <img src={dep6} alt="" className='cursor-pointer'/>
-            <img src={dep7} alt="" className='cursor-pointer'/>
+          <div className='lg:grid lg:grid-cols-3 gap-4 hidden'>
+            <img src={dep2} alt="" className='cursor-pointer' />
+            <img src={dep3} alt="" className='cursor-pointer' />
+            <img src={dep4} alt="" className='cursor-pointer' />
+            <img src={dep5} alt="" className='cursor-pointer' />
+            <img src={dep6} alt="" className='cursor-pointer' />
+            <img src={dep7} alt="" className='cursor-pointer' />
           </div>
+        </div>
+        <div className='lg:hidden lg:gap-8 grid grid-cols-2 w-full gap-10 p-4'>
+          <img src={dep1} alt="" className='max-w-[255px] max-h-[642px] cursor-pointer' />
+          <img src={dep2} alt="" className='cursor-pointer h-full w-full' />
+          <img src={dep3} alt="" className='cursor-pointer h-full w-full' />
+          <img src={dep4} alt="" className='cursor-pointer h-full w-full'/>
+          <img src={dep5} alt="" className='cursor-pointer h-full w-full' />
+          <img src={dep6} alt="" className='cursor-pointer h-full w-full' />
+          <img src={dep7} alt="" className='cursor-pointer h-full w-full' />
         </div>
       </div>
     </section>
