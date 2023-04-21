@@ -1,6 +1,6 @@
 import { WhatsappLogo } from "@phosphor-icons/react";
-import { Form } from "../Form/Form";
-import { Location } from "../Location/Location";
+import { Form } from "../Form";
+import { Location } from "../Location";
 
 export function Contato() {
   return (
@@ -19,7 +19,7 @@ export function Contato() {
         <div className="max-w-[670px]">
           <Location />
         </div>
-        <div className=" lg:hidden flex flex-col gap-2 m-auto items-center justify-center p-10 gap-2 text-white font-bold  text-xl ">
+        <div className=" lg:hidden flex flex-col gap-2 m-auto items-center justify-center p-10  text-white font-bold  text-xl ">
           <WhatsappLogo size={44} />
           <span className=""> 11 94558-0443</span>
           <button className="box-border bg-blackA5 inline-flex appearance-none items-center justify-center rounded-[4px] p-[10px] text-[15px] w-40 h-10 float-right hover:bg-white hover:text-atendimento transition-all hover:font-semibold leading-none text-white shadow-[0_0_0_1px] outline-none hover:shadow-[0_0_0_1px_black] focus:shadow-[0_0_0_2px_black] selection:color-white selection:bg-blackA9 max-w-[500px] max-h-[90px]">
