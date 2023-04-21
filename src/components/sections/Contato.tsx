@@ -4,7 +4,7 @@ import { Location } from "../Location/Location";
 
 export function Contato() {
   return (
-    <section id='#contato' className="bg-gradient-to-tr from-from to-atendimento">
+    <section id='contato' className="bg-gradient-to-tr from-from to-atendimento">
       <div className="">
         <div className="flex lg:justify-between lg:space-x-50 lg:mr-10">
           <span className="text-white lg:p-10 lg:ml-28 lg:mt-12 lg:text-4xl text-xl p-10 w-full font-bold">Venha conhecer nossa loja.</span>

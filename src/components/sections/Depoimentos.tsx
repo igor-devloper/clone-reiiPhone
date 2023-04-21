@@ -11,7 +11,7 @@ import dep7 from '/src/assets/dep7.png'
 
 export function Depoimentos() {
   return (
-    <section id='#depoimentos' className='mb-24'>
+    <section id='depoimentos' className='mb-24'>
       <div className='m-auto max-w-[965px]'>
         <h1 className='text-from  text-3xl flex justify-center font-bold mt-16 mb-4' data-aos="fade-up">Depoimentos</h1>
         <div className='lg:flex lg:gap-8 hidden'>
