@@ -2,7 +2,11 @@ import { useEffect, useState } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import bg from './assets/bg.png'
-import { Sidebar,Atendimento,NossaHistoria,Depoimentos,Contato } from './components'
+import { Sidebar } from './components/Nav/Sidebar'
+import { Atendimento } from './components/Sections/Atendimento'
+import { NossaHistoria } from './components/Sections/NossaHistoria'
+import { Depoimentos } from './components/Sections/Depoimentos'
+import { Contato } from './components/Sections/Contato'
 
 
 export function App() {

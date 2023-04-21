@@ -1,7 +1,7 @@
 import { CrownSimple, FacebookLogo, Headset, InstagramLogo, MapPin, Megaphone, Wrench } from "@phosphor-icons/react";
 import logo from '/src/assets/logo.png'
 import white from '/src/assets/whitw.png'
-import { HamburgerIcon } from "../Icon";
+import { HamburgerIcon } from "../Icon/HamburguerIcon";
 
 interface SidebarProps {
   acao: boolean;

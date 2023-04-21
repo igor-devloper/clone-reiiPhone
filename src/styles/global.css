@@ -5,6 +5,6 @@
 body {
   overflow-x: hidden;
   font-family: Poppins !important;
-  trasition: colors 1s ease;
+  transition: colors 1s ease;
   scroll-behavior: smooth;
 }
