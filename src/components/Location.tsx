@@ -13,7 +13,7 @@ export function Location() {
         value="tab1"
       >
         <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x94ce5850b9b27e57:0x4d3f8cca5893ddd8?source=g.page.share" target='_blank' className='h-full'>
-          <img src={tab1} alt="" className='w-screen lg:max-w-[600px] lg:pr-24' />
+          <img src={tab1} alt="" className='w-full lg:max-w-[600px] lg:pr-24' />
         </a>
       </Tabs.Content>
 
@@ -22,7 +22,7 @@ export function Location() {
         value="tab2"
       >
         <a href="https://www.google.com/maps/place/Rei+do+iPhone+2%C2%AA+Unidade/@-23.5850316,-46.6781399,19z/data=!3m1!4b1!4m5!3m4!1s0x94ce57f3abdf5263:0xed9fbc5627e160e4!8m2!3d-23.5850316!4d-46.6775914?shorturl=1" target='_blank'>
-          <img src={tab2} alt="" className='w-screen  lg:max-w-[600px] lg:pr-24' />
+          <img src={tab2} alt="" className='w-full  lg:max-w-[600px] lg:pr-24' />
         </a>
       </Tabs.Content>
       <Tabs.List className="lg:flex lg:gap-4 lg:mt-10 flex lg:mr-36  transition-transform duration-200" aria-label="Manage your account">
@@ -38,7 +38,7 @@ export function Location() {
         </Tabs.Trigger>
         <Tabs.Trigger
           className="lg:hidden flex data-[state=active]:bg-white data-[state=active]:text-from data-[state=active]:p-2 data-[state=active]:rounded-md text-white "
-          value="tab2"
+          value="tab1"
         >
           <div className='items-center text-xs'>
             <span className='font-head font-bold'>Loja Sta Efigênia</span>
@@ -58,13 +58,13 @@ export function Location() {
           </div>
         </Tabs.Trigger>
         <Tabs.Trigger
-          className="lg:hidden flex data-[state=active]:bg-white data-[state=active]:text-from data-[state=active]:p-2 data-[state=active]:rounded-md text-white "
+          className="lg:hidden flex transition-colors duration-100 max-w-[461px] data-[state=active]:bg-white data-[state=active]:text-from data-[state=active]:p-2 data-[state=active]:rounded-md text-white "
           value="tab2"
         >
           <div className='items-center text-xs'>
-            <span className='font-head font-bold'>Loja Sta Efigênia</span>
-            <p>R. Santa Ifigênia, 78
-              Santa Ifigênia - SP</p>
+            <span className='font-head font-bold'>Loja João Cachoeira</span>
+            <p>R. João Cachoeira, 567
+              Itaim Bibi - SP</p>
           </div>
         </Tabs.Trigger>
       </Tabs.List>
