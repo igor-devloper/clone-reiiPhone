@@ -38,7 +38,7 @@ export function Location() {
         </Tabs.Trigger>
         <Tabs.Trigger
           className="lg:hidden flex data-[state=active]:bg-white data-[state=active]:text-from data-[state=active]:p-2 data-[state=active]:rounded-md text-white "
-          value="tab1"
+          value="tab2"
         >
           <div className='items-center text-xs'>
             <span className='font-head font-bold'>Loja Sta Efigênia</span>

@@ -49,7 +49,7 @@ export function Atendimento() {
           <h1 className='lg:mt-4 text-xl font-bold lg:max-w-[191px]'>Reparo que você vê</h1>
           <p className='lg:mt-[12px] text-xs lg:max-w-[204px]'>No Rei do iPhone, trabalhamos com total transparência. Por isso, a maioria dos reparos são feitos com o celular aberto na frente do cliente. Isso significa que você pode acompanhar tudo bem de pertinho, passo a passo, seja bateria viciada ou um aparelho sem áudio. Ainda, você tem a oportunidade de tirar suas dúvidas durante o processo, e ter certeza da privacidade e segurança que a nossa assistência proporciona.</p>
         </div>
-        <div data-aos="fade-left" className='lg:mr-[100px] w-full flex'>
+        <div data-aos="fade-left" className='lg:mr-[100px] flex'>
           <img src={img5} alt="" className='flex bg-center items-center justify-center m-auto'/>
         </div>
       </div>
