@@ -2,35 +2,29 @@ import { CrownSimple, FacebookLogo, Headset, InstagramLogo, MapPin, Megaphone, W
 import logo from '/src/assets/logo.png'
 import white from '/src/assets/whitw.png'
 import { HamburgerIcon } from "../components/HamburguerIcon";
+import { NavItem } from "./NavIItem";
 
 interface SidebarProps {
-  acao: boolean;
+  acao?: boolean;
+  nameSection: string;
+  childrenSection: JSX.Element[];
+  descriptionSection: string;
 }
 
-export function Sidebar(props: SidebarProps) {
+export function Sidebar(props: SidebarProps): JSX.Element {
   return (
 
     <div className="flex flex-row">
       <aside className={(props.acao ? 'bg-atendimento w-24 h-screen fixed transition-all z-50 hidden  items-center flex-col lg:flex' : 'bg-white w-24 h-screen fixed z-50 hidden lg:flex items-center flex-col')}>
 
         {props.acao ? <img src={white} alt="" className='max-h-8 flex m-auto mt-10' /> : <img src={logo} alt="" className='max-h-8 flex m-auto mt-10' />}
-        
-        <nav className='p-6 space-y-4'>
-          <a href="#home" className='flex items-center gap-2 '>
-            <Wrench size={32} className={(props.acao ? 'text-white hover:bg-white  hover:rounded hover:p-2 hover:text-atendimento transition-all' : 'text-main hover:bg-main hover:text-white hover:rounded hover:p-2 text-2xl transition-all active:bg-from')} weight="regular" />
-          </a>
-          <a href="#atendimento" className='flex items-center gap-2'>
-            <Headset size={32} className={(props.acao ? 'text-white hover:bg-white  hover:rounded hover:p-2 hover:text-atendimento transition-all' : 'text-main hover:bg-main hover:text-white hover:rounded hover:p-2 text-2xl transition-all')} weight="regular" />
-          </a>
-          <a href="#nossaHistoria" className='flex items-center gap-2'>
-            <CrownSimple size={32} className={(props.acao ? 'text-white hover:bg-white  hover:rounded hover:p-2 hover:text-atendimento transition-all' : 'text-main hover:bg-main hover:text-white hover:rounded hover:p-2 text-2xl transition-all')} weight="regular" />
-          </a>
-          <a href="#depoimentos" className='flex items-center gap-2'>
-            <Megaphone size={32} className={(props.acao ? 'text-white hover:bg-white  hover:rounded hover:p-2 hover:text-atendimento transition-all' : 'text-main hover:bg-main hover:text-white hover:rounded hover:p-2 text-2xl transition-all')} weight="regular" />
-          </a>
-          <a href="#contato" className='flex items-center gap-2'>
-            <MapPin size={32} weight="regular" className={(props.acao ? 'text-white hover:bg-white  hover:rounded hover:p-2 hover:text-atendimento transition-all' : 'text-main hover:bg-main hover:text-white hover:rounded hover:p-2 text-2xl transition-all')} />
-          </a>
+
+        <nav className='flex flex-col items-center justify-center mb-10 space-y-4'>
+          <NavItem childrenSection={[<Wrench />]} nameSection="home" descriptionSection="Reparos" />
+          <NavItem childrenSection={[<Headset />]} nameSection="atendimento" descriptionSection="Atendimento"/>
+          <NavItem childrenSection={[<CrownSimple />]} nameSection="nossaHistoria" descriptionSection="Nossa Historia"/>
+          <NavItem childrenSection={[<Megaphone />]} nameSection="depoimentos" descriptionSection="Depoimentos"/>
+          <NavItem childrenSection={[<MapPin />]} nameSection="contato" descriptionSection="Contato"/>
         </nav>
 
 
@@ -44,8 +38,8 @@ export function Sidebar(props: SidebarProps) {
         </div>
       </aside>
       <div className="flex lg:hidden text-white p-4" >
-          <HamburgerIcon />
-        </div>  
+        <HamburgerIcon />
+      </div>
     </div>
   )
 }

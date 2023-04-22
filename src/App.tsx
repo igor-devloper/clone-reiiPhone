@@ -11,7 +11,6 @@ import bg from './assets/bg.png'
 
 export function App() {
   const [color, setColor] = useState(false)
-  console.log(color)
   useEffect(() => {
     Aos.init({ duration: 1500 })
   }, [])
@@ -42,7 +41,7 @@ export function App() {
   return (
     <div className='transition-all'>
       <section className='flex  bg-main h-screen' id='home'>
-        <Sidebar acao={color} />
+        <Sidebar acao={color} nameSection={''} childrenSection={[]} descriptionSection={''} />
         <div className='max-w-md m-auto mt-32 flex-1'>
           <img src={bg} alt="" className='m-auto' />
         </div>
