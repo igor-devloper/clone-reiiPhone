@@ -15,7 +15,7 @@ export function Sidebar(props: SidebarProps) {
 
         {props.acao ? <img src={white} alt="" className='max-h-8 flex m-auto mt-10' /> : <img src={logo} alt="" className='max-h-8 flex m-auto mt-10' />}
         
-        <nav className='mt-20 p-6 space-y-4'>
+        <nav className='p-6 space-y-4'>
           <a href="#home" className='flex items-center gap-2 '>
             <Wrench size={32} className={(props.acao ? 'text-white hover:bg-white  hover:rounded hover:p-2 hover:text-atendimento transition-all' : 'text-main hover:bg-main hover:text-white hover:rounded hover:p-2 text-2xl transition-all active:bg-from')} weight="regular" />
           </a>

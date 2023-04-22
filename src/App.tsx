@@ -1,12 +1,12 @@
+import { Sidebar } from './components/Sidebar'
+import { Atendimento } from './components/Atendimento'
+import { NossaHistoria } from './components/NossaHistoria'
+import { Depoimentos } from './components/Depoimentos'
+import { Contato } from './components/Contato'
 import { useEffect, useState } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import bg from './assets/bg.png'
-import { Sidebar } from './components/Sidebar'
-import { Atendimento } from './components/Sections/Atendimento'
-import { NossaHistoria } from './components/Sections/NossaHistoria'
-import { Depoimentos } from './components/Sections/Depoimentos'
-import { Contato } from './components/Sections/Contato'
 
 
 export function App() {
@@ -41,7 +41,7 @@ export function App() {
   }, [])
   return (
     <div className='transition-all'>
-      <section className='flex h-[700px] bg-main' id='home'>
+      <section className='flex  bg-main h-screen' id='home'>
         <Sidebar acao={color} />
         <div className='max-w-md m-auto mt-32 flex-1'>
           <img src={bg} alt="" className='m-auto' />
