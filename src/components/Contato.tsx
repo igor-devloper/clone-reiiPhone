@@ -25,9 +25,9 @@ export function Contato() {
           <div className=" lg:hidden flex items-center pb-10 flex-col  lg:gap-2 lg:m-auto lg:items-center lg:justify-center lg:p-10  text-white font-bold  text-xl ">
             <WhatsappLogo size={44} />
             <span className=""> 11 94558-0443</span>
-            <button className="box-border bg-blackA5 inline-flex appearance-none items-center justify-center rounded-[4px] p-[10px] text-[15px] w-40 h-10 float-right hover:bg-white hover:text-atendimento transition-all hover:font-semibold leading-none text-white shadow-[0_0_0_1px] outline-none hover:shadow-[0_0_0_1px_black] focus:shadow-[0_0_0_2px_black] selection:color-white selection:bg-blackA9 max-w-[500px] max-h-[90px]">
+            <a href="/Form" className="box-border bg-blackA5 inline-flex appearance-none items-center justify-center rounded-[4px] p-[10px] text-[15px] w-40 h-10 float-right hover:bg-white hover:text-atendimento transition-all hover:font-semibold leading-none text-white shadow-[0_0_0_1px] outline-none hover:shadow-[0_0_0_1px_black] focus:shadow-[0_0_0_2px_black] selection:color-white selection:bg-blackA9 max-w-[500px] max-h-[90px]">
               fale com a gente
-            </button>
+            </a>
           </div>
         </div>
       </div>

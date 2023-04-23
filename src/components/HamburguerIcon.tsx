@@ -2,15 +2,17 @@ interface Props  {
   width?: string | number;
   height?: string | number;
   fill?: string;
+  estilo?: string;
 };
 
 export function HamburgerIcon({
   width = 25,
   height = 17,
   fill = '#fff',
+  estilo
 }: Props) {
   return (
-    <div style={{ width, height }}>
+    <div style={{ width, height }} className={estilo}>
       <svg
         style={{ width: 'inherit', height: 'inherit' }}
         viewBox="0 0 25 17"

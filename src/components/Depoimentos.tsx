@@ -26,7 +26,7 @@ export function Depoimentos() {
           </div>
         </div>
         <div className='lg:hidden lg:gap-8 grid grid-cols-2 w-full gap-10 p-4'>
-          <img src={dep1} alt="" className='max-w-[255px] max-h-[642px] cursor-pointer' />
+          <img src={dep1} alt="" className='max-w-[200px] max-h-[642px] cursor-pointer' />
           <img src={dep2} alt="" className='cursor-pointer h-full w-full' />
           <img src={dep3} alt="" className='cursor-pointer h-full w-full' />
           <img src={dep4} alt="" className='cursor-pointer h-full w-full'/>

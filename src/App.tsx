@@ -7,6 +7,8 @@ import { useEffect, useState } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import bg from './assets/bg.png'
+import { AppContext } from './contexts/Index'
+import { WhatsappLogo } from '@phosphor-icons/react'
 
 
 export function App() {
@@ -39,18 +41,33 @@ export function App() {
     window.addEventListener('scroll', positionScroll)
   }, [])
   return (
-    <div className='transition-all'>
-      <section className='flex  bg-main h-screen' id='home'>
-        <Sidebar acao={color} nameSection={''} childrenSection={[]} descriptionSection={''} />
-        <div className='max-w-md m-auto mt-32 flex-1'>
-          <img src={bg} alt="" className='m-auto' />
+    <AppContext>
+      <div className='transition-all'>
+        <section className='flex  bg-main h-screen' id='home'>
+          <Sidebar acao={color} nameSection={''} childrenSection={[]} descriptionSection={''} />
+          <div className='max-w-md m-auto mt-32 flex-1'>
+            <img src={bg} alt="" className='m-auto' />
+          </div>
+        </section>
+        <Atendimento />
+        <NossaHistoria />
+        <Depoimentos />
+        <Contato />
+        <div className='fixed bottom-4 right-4 md:bottom-8 md:right-8 flex flex-col items-end'>
+
+          <a className='bg-green-500 rounded-full px-3 h-12 text-white flex items-center group'>
+            <WhatsappLogo className='w-8 h-8' />
+
+            <span className='max-w-0 overflow-hidden lg:flex hidden group-hover:max-w-xl transition-all duration-700 ease-linear'>
+              <span className='p-2'></span>
+              <p className='font-bold transition-all duration-100 ease-linear'>
+                Em que posso ajudar?
+              </p>
+            </span>
+          </a>
         </div>
-      </section>
-      <Atendimento />
-      <NossaHistoria />
-      <Depoimentos />
-      <Contato />
-    </div>
+      </div>
+    </AppContext>
   )
 }
 

@@ -5,7 +5,7 @@ import tab2 from '/src/assets/tab2.png'
 export function Location() {
   return (
     <Tabs.Root
-      className="pr-32 ml-20 mb-20 "
+      className="lg:pr-32 lg:ml-20 mb-20 "
       defaultValue="tab1"
     >
       <Tabs.Content
