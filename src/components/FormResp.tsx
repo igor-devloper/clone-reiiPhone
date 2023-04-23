@@ -10,7 +10,7 @@ export function FormResp() {
         <Field className="grid mb-[10px]" name="nome">
           <div className="flex items-baseline justify-between">
             <Label className="text-white text-sm mb-2">Nome</Label>
-            <Message className="text-[13px] text-whit" match="valueMissing">
+            <Message className="text-[13px] text-white" match="valueMissing">
               Digite seu Nome
             </Message>
           </div>
@@ -26,7 +26,7 @@ export function FormResp() {
         <Field className="grid mb-[10px]" name="email">
           <div className="flex items-baseline justify-between">
             <Label className="text-white text-sm mb-2">Email</Label>
-            <Message className="text-[13px] text-whit" match="valueMissing">
+            <Message className="text-[13px] text-white" match="valueMissing">
               Digite seu Email
             </Message>
           </div>
