@@ -6,11 +6,8 @@ export function Form() {
       <Field className="grid mb-[10px]" name="nome">
         <div className="flex items-baseline justify-between">
           <Label className="text-white text-sm mb-2">Nome</Label>
-          <Message className="text-[13px] text-whit" match="valueMissing">
-            Please enter your email
-          </Message>
-          <Message className="" match="typeMismatch">
-            Please provide a valid email
+          <Message className="text-[13px] text-white" match="valueMissing">
+            Digite seu Nome
           </Message>
         </div>
         <Control asChild>
@@ -25,11 +22,8 @@ export function Form() {
       <Field className="grid mb-[10px]" name="email">
         <div className="flex items-baseline justify-between">
           <Label className="text-white text-sm mb-2">Email</Label>
-          <Message className="text-[13px] text-whit" match="valueMissing">
-            Please enter your email
-          </Message>
-          <Message className="" match="typeMismatch">
-            Please provide a valid email
+          <Message className="text-[13px] text-white" match="valueMissing">
+            Digite seu Email
           </Message>
         </div>
         <Control asChild>
@@ -44,6 +38,9 @@ export function Form() {
       <Field className="grid mb-[10px]" name="telefone">
         <div className="flex items-baseline justify-between">
           <Label className="text-white text-sm mb-2">Telefone</Label>
+          <Message className="text-[13px] text-white" match="valueMissing">
+            Digite seu Telefone
+          </Message>
         </div>
         <Control asChild>
           <input
@@ -59,6 +56,9 @@ export function Form() {
           <Label className="text-[15px] font-medium leading-[35px] text-white">
             Mensagem
           </Label>
+          <Message className="text-[13px] text-white" match="valueMissing">
+            Digite seu Mensagem
+          </Message>
         </div>
         <Control asChild>
           <textarea
